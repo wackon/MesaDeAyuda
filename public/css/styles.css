@@ -1,0 +1,93 @@
+
+body{
+	background: #393838 !important;
+    overflow-x: hidden;
+}
+.login-form {
+	margin: auto;
+}
+.card {
+	margin: auto;
+	width: 600px;
+	max-width: 100%;
+	
+}
+
+/* Index CRUD
+================================================== */
+#index-crud h2{
+	background: linear-gradient(90deg, rgba(227,178,26,1) 0%, rgba(169,56,43,1) 75%);
+    padding: 10px !important;
+    color: #fff !important;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px !important;
+    }
+#index-crud .social-box {
+	padding: 20px 0px;
+}
+#index-crud .social-box i {
+	padding: 10px;
+}
+#index-crud .social-box .box{
+    height:399px;
+    background: #FFF;
+    border-radius: 10px; 
+    padding: 40px 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-out;
+}
+
+#index-crud .social-box .box:hover{
+   box-shadow: 0 16px 24px 2px rgb(169 56 43 / 40%), 0 6px 30px 5px rgb(169 56 43 / 40%), 0 8px 10px -5px rgb(169 56 43 / 40%);
+   }
+#index-crud .social-box .box .box-text{
+    margin:20px 0px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#index-crud .social-box .box .box-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    background: #a9382b;
+    border-color: #a9382b;
+}
+#index-crud .box-title h3{
+	color: #a9382b;
+}
+#index-crud .box i{
+	font-size: 100px;
+	color: #43413f;
+}
+#index-crud .btn-primary{
+	background-color: #a9382b;
+    border-color: #a9382b;
+}
+#index-crud .btn-primary:hover{
+	background-color: #b34c29;
+    border-color: #b24b29;
+}
+.title-view{
+	background: linear-gradient(90deg, rgba(227,178,26,1) 0%, rgba(169,56,43,1) 75%);
+    padding: 10px !important;
+    color: #fff !important;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px !important;
+}
+.btn-regresar{
+    background-color: #a9382b;
+    border-color: #a9382b;
+    color: #fff;
+}
+
+.btn-regresar:hover{
+    background-color: #b34c29;
+    border-color: #b24b29;
+    color: #fff;
+    text-shadow: 2px -2px 9px black;
+}

@@ -4,6 +4,7 @@
     {
         
         var $conn;
+        
         function __construct(){
             $this->conn=null;
         }

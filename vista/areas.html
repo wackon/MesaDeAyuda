@@ -17,29 +17,40 @@
 
 	<div class="container my-4">
 		<div class="row">
-			<form action="vistaLogin.php" class="login-form" method="POST" align="center">
+			<form action="vistaAreas.php" class="login-form" method="POST" align="center">
 				<div class="card">
 					<div class="col-md-12">
 						<div class="title-form my-4">
-							<h2 class="title-view">LOGIN</h2>
+							<h2 class="title-view">AREAS</h2>
+							<p>Si desea insertar una nueva área no es necesario ingresar el id ya que es autoincrementable y se asigna automáticamente.</p>
+						</div>
+					</div>
+
+					<div class="user-form my-2">
+						<div class="row">
+							<div class="col-md-6">Id Área:</div>
+							<div class="col-md-6"><input type="text" name="txtIdArea" required></div>
 						</div>
 					</div>
 					<div class="user-form my-2">
 						<div class="row">
-							<div class="col-md-6">Email Empleado:</div>
-							<div class="col-md-6"><input type="text" value="hugol@mail.com" name="txtEmailEmpleado"></div>
+							<div class="col-md-6">Nombre Área:</div>
+							<div class="col-md-6"><input type="text" name="txtNombreArea" ></div>
 						</div>
 					</div>
 					<div class="user-form my-2">
 						<div class="row">
-							<div class="col-md-6">Id Empleado:</div>
-							<div class="col-md-6"><input type="password" value="1" name="txIdEmpleado"></div>
+							<div class="col-md-6">FkEmple:</div>
+							<div class="col-md-6"><input type="text" name="txtFkEmple" ></div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="btn-form my-4 mx-auto">
 							<div class="col-md-12">
-								<input type="submit" class="btn-dark" name="btn" value="ingresar">
+								<input type="submit" class="btn-dark" name="btn" value="guardar">
+								<input type="submit" class="btn-dark" name="btn" value="consultar">
+								<input type="submit" class="btn-dark" name="btn" value="modificar">
+								<input type="submit" class="btn-dark" name="btn" value="borrar">
 							</div>
 						</div>
 					</div>
@@ -49,7 +60,7 @@
 	</div>
 
 	<div class="row justify-content-center">
-    	<a href="/MesadeAyuda/vista/login.html" class="btn btn-lg btn-regresar">Volver al sitio principal</a>
+    	<a href="/proyecto_mesa_ayuda/index.html" class="btn btn-lg btn-regresar">Volver al sitio principal</a>
 	</div>
 
 
@@ -58,6 +69,7 @@
 	<script src="../public/js/bootstrap.min.js"></script>
 	<script src="../public/js/bootstrap.bundle.min.js"></script>
 	<!--SCRIPTS-->
+
 </body>
 
 </html>

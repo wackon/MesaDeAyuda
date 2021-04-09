@@ -6,7 +6,7 @@
     var $fkEmple;
  
 
-    function _construct( $idArea, $nombre, $fkEmple){
+    function __construct( $idArea, $nombre, $fkEmple){
 
         $this->idArea = $idArea;
         $this->nombre = $nombre;

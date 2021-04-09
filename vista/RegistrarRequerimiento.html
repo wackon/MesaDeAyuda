@@ -17,29 +17,43 @@
 
 	<div class="container my-4">
 		<div class="row">
-			<form action="vistaLogin.php" class="login-form" method="POST" align="center">
+			<form action="vistaRegistrarRequerimiento.php" class="login-form" method="POST" align="center">
 				<div class="card">
 					<div class="col-md-12">
 						<div class="title-form my-4">
-							<h2 class="title-view">LOGIN</h2>
+							<h2 class="title-view">REGISTRAR REQUERIMIENTO</h2>
+						</div>
+					</div>
+
+					<div class="user-form my-2">
+						<div class="row">
+							<div class="col-md-12">Confirme aquí su Id de Empleado:</div>
+							<div class="col-md-12"><input type="text" name="txtIdEmpleado"></div>
 						</div>
 					</div>
 					<div class="user-form my-2">
 						<div class="row">
-							<div class="col-md-6">Email Empleado:</div>
-							<div class="col-md-6"><input type="text" value="hugol@mail.com" name="txtEmailEmpleado"></div>
+							<div class="col-md-12">Ingrese aquí su requerimiento:</div>
+							<div class="col-md-12"><textarea name="txtRequerimiento" rows="10" cols="50"></textarea></div>
 						</div>
 					</div>
 					<div class="user-form my-2">
 						<div class="row">
-							<div class="col-md-6">Id Empleado:</div>
-							<div class="col-md-6"><input type="password" value="1" name="txIdEmpleado"></div>
+							<div class="col-md-12">
+								<select name="Areas">
+								<option disabled="" selected="">Selecciona una Opción</option>
+								<option value="30">GESTIÓN HUMANA</option>
+								<option value="50">INFORMATICA</option>
+								<option value="60">MANTENIMIENTO</option>
+							  </select></div>
 						</div>
 					</div>
+
 					<div class="row">
 						<div class="btn-form my-4 mx-auto">
 							<div class="col-md-12">
-								<input type="submit" class="btn-dark" name="btn" value="ingresar">
+								<input type="submit" class="btn-dark" name="btn" value="guardar">
+								<input type="submit" class="btn-dark" name="btn" value="borrar datos">
 							</div>
 						</div>
 					</div>
@@ -49,7 +63,7 @@
 	</div>
 
 	<div class="row justify-content-center">
-    	<a href="/MesadeAyuda/vista/login.html" class="btn btn-lg btn-regresar">Volver al sitio principal</a>
+    	<a href="/proyecto_mesa_ayuda/index.html" class="btn btn-lg btn-regresar">Volver al sitio principal</a>
 	</div>
 
 

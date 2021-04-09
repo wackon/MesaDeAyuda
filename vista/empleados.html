@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Empleados</title>
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="../public/css/bootstrap.css" />
+    <link rel="stylesheet" href="../public/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="../public/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="../public/css/styles.css" />
+    <!--ESTILOS-->
+  </head>
+
+  <body>
+    <div class="container my-4">
+      <div class="row">
+        <form
+          action="vistaEmpleados.php"
+          class="login-form"
+          method="POST"
+          align="center"
+        >
+          <div class="card">
+            <div class="col-md-12">
+              <div class="title-form my-4">
+                <h2 class="title-view">EMPLEADOS</h2>
+              </div>
+            </div>
+
+            <div class="user-form my-2">
+              <div class="row">
+                <div class="col-md-6">Id Empleado:</div>
+                <div class="col-md-6">
+                  <input type="text" name="txtIdEmpleado" />
+                </div>
+              </div>
+            </div>
+            <div class="user-form my-2">
+              <div class="row">
+                <div class="col-md-6">Nombre:</div>
+                <div class="col-md-6">
+                  <input type="text" name="txtNombre" />
+                </div>
+              </div>
+            </div>
+            <div class="user-form my-2">
+              <div class="row">
+                <div class="col-md-6">Foto:</div>
+                <div class="col-md-6"><input type="text" name="txtFoto" /></div>
+              </div>
+            </div>
+            <div class="user-form my-2">
+              <div class="row">
+                <div class="col-md-6">Hoja de Vida:</div>
+                <div class="col-md-6">
+                  <input type="text" name="txtHojaVida" />
+                </div>
+              </div>
+            </div>
+            <div class="user-form my-2">
+              <div class="row">
+                <div class="col-md-6">Teléfono:</div>
+                <div class="col-md-6">
+                  <input type="text" name="txtTelefono" />
+                </div>
+              </div>
+            </div>
+            <div class="user-form my-2">
+              <div class="row">
+                <div class="col-md-6">Cargo:</div>
+                <div class="col-md-6">
+                  <input type="text" name="txtCargo" />
+                </div>
+              </div>
+            </div>
+            <div class="user-form my-2">
+              <div class="row">
+                <div class="col-md-6">Email:</div>
+                <div class="col-md-6">
+                  <input type="text" name="txtEmail" />
+                </div>
+              </div>
+            </div>
+            <div class="user-form my-2">
+              <div class="row">
+                <div class="col-md-6">Dirección:</div>
+                <div class="col-md-6">
+                  <input type="text" name="txtDireccion" />
+                </div>
+              </div>
+            </div>
+            <div class="user-form my-2">
+              <div class="row">
+                <div class="col-md-6">X:</div>
+                <div class="col-md-6"><input type="text" name="txtX" /></div>
+              </div>
+            </div>
+            <div class="user-form my-2">
+              <div class="row">
+                <div class="col-md-6">Y:</div>
+                <div class="col-md-6"><input type="text" name="txtY" /></div>
+              </div>
+            </div>
+            <div class="user-form my-2">
+              <div class="row">
+                <div class="col-md-6">Fk Emple Jefe:</div>
+                <div class="col-md-6">
+                  <input type="text" name="txtFkEmple" />
+                </div>
+              </div>
+            </div>
+            <div class="user-form my-2">
+              <div class="row">
+                <div class="col-md-6">Fk Id Área:</div>
+                <div class="col-md-6">
+                  <input type="text" name="txtFkIdArea" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="btn-form my-4 mx-auto">
+                <div class="col-md-12">
+                  <input
+                    type="submit"
+                    class="btn-dark"
+                    name="btn"
+                    value="guardar"
+                  />
+                  <input
+                    type="submit"
+                    class="btn-dark"
+                    name="btn"
+                    value="consultar"
+                  />
+                  <input
+                    type="submit"
+                    class="btn-dark"
+                    name="btn"
+                    value="modificar"
+                  />
+                  <input
+                    type="submit"
+                    class="btn-dark"
+                    name="btn"
+                    value="borrar"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <a href="/proyecto_mesa_ayuda/index.html" class="btn btn-lg btn-regresar"
+        >Volver al sitio principal</a
+      >
+    </div>
+
+    <!--SCRIPTS-->
+    <script src="../public/js/jquery-3.5.1.min.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.min.js"></script>
+    <!--SCRIPTS-->
+  </body>
+</html>

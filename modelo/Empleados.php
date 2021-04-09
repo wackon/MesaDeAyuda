@@ -1,7 +1,7 @@
 <?php
     class Empleados{
 
-        var $idEmpleado;
+        var $idempleado;
         var $nombre;
         var $foto;
         var $hojaVida;
@@ -14,22 +14,27 @@
         var $fkArea;
 
 
-        function _construct( $idEmpleado, $nombre, $foto, $hojaVida, $telefono, $email, $direccion, $x, $y, $fkEmple_Jefe,$fkArea){
+        function __construct( $idempleado, $nombre, $foto, $hojaVida, $telefono, $email, $direccion, $x, $y, $fkEmple_Jefe,$fkArea){
 
-            $this->idEmpleado= $idEmpleado
-            $this->nombre = $nombre;
+            $this->idempleado= $idempleado;
+            $this->nombre=$nombre;
+            $this->foto = $foto;
+            $this->hojaVida = $hojaVida;
             $this->telefono = $telefono;
             $this->email = $email;
-            $this->credito = $credito;
-
+            $this->direccion = $direccion;
+            $this->x = $x;
+            $this->y = $y;
+            $this->fkEmple_Jefe = $fkEmple_Jefe;
+            $this->fkArea = $fkArea;
         }
 
-        function setIdEmpleado($idEmpleado){
-            $this->idEmpleado= $idEmpleado
+        function setIdEmpleado($idempleado){
+            $this->idempleado= $idempleado;
         }
 
         function getIdEmpleado (){
-            return $this->idEmpleado;
+            return $this->idempleado;
         }
 
 
@@ -78,7 +83,7 @@
 
 
         function setDireccion($direccion){
-            $this->direccion = $direccion
+            $this->direccion = $direccion;
         }
 
 
@@ -103,7 +108,7 @@
         }
 
         function setFkEmple_Jefe($fkEmple_Jefe){
-            $this->fkEmple_Jefe = $fkEmple_Jefe
+            $this->fkEmple_Jefe = $fkEmple_Jefe;
         }
 
 
@@ -118,6 +123,8 @@
         function getFkArea (){
             return $this->fkArea;
         }
+
+
 
     }
 

@@ -1,0 +1,28 @@
+INSERT INTO `empleado`(`IDEMPLEADO`, `NOMBRE`, `FOTO`, `HOJAVIDA`, `TELEFONO`, `EMAIL`, `DIRECCION`, `X`, `Y`, 
+`fkEMPLE_JEFE`, `fkAREA`) VALUES 
+('1','Hugo Lopez','C:\\xampp\\htdocs\\MesadeAyuda\\vista\\fotos\\1.png','C:\\xampp\\htdocs\\MesadeAyuda\\
+vista\\hvs\\1.pdf','411','hugol@mail.com','Cl. 54a #30-01, Medellín, Antioquia',-75.5532407,6.2453253,null,10);
+INSERT INTO `empleado`(`IDEMPLEADO`, `NOMBRE`, `FOTO`, `HOJAVIDA`, `TELEFONO`, `EMAIL`, `DIRECCION`, `X`, `Y`, 
+`fkEMPLE_JEFE`, `fkAREA`) VALUES 
+('2','Camilo Vanegas','C:\\xampp\\htdocs\\MesadeAyuda\\vista\\fotos\\2.png','C:\\xampp\\htdocs\\MesadeAyuda\\
+vista\\hvs\\2.pdf','412','camilov@mail.com','Cra. 74d #732, Medellín, Antioquia',-75.5910024,6.2736935,null,10);
+INSERT INTO `empleado`(`IDEMPLEADO`, `NOMBRE`, `FOTO`, `HOJAVIDA`, `TELEFONO`, `EMAIL`, `DIRECCION`, `X`, `Y`, 
+`fkEMPLE_JEFE`, `fkAREA`) VALUES 
+('3','Fernando Usuga','C:\\xampp\\htdocs\\MesadeAyuda\\vista\\fotos\\3.png','C:\\xampp\\htdocs\\MesadeAyuda\\vi
+sta\\hvs\\3.pdf','413','fernandou@mail.com','Cra. 65 #98 A-75, Medellín, Antioquia',-75.5715315,6.2938986,null,20);
+INSERT INTO `empleado`(`IDEMPLEADO`, `NOMBRE`, `FOTO`, `HOJAVIDA`, `TELEFONO`, `EMAIL`, `DIRECCION`, `X`, `Y`, 
+`fkEMPLE_JEFE`, `fkAREA`) VALUES 
+('4','Luisa Gutierrez','C:\\xampp\\htdocs\\MesadeAyuda\\vista\\fotos\\4.png','C:\\xampp\\htdocs\\MesadeAyuda\\vi
+sta\\hvs\\4.pdf','414','luisag@mail.com','Cra. 51 #58-69, Medellín, Antioquia',-75.5683161,6.2576409,null,10);
+INSERT INTO `empleado`(`IDEMPLEADO`, `NOMBRE`, `FOTO`, `HOJAVIDA`, `TELEFONO`, `EMAIL`, `DIRECCION`, `X`, `Y`, 
+`fkEMPLE_JEFE`, `fkAREA`) VALUES 
+('5','Lina Posada','C:\\xampp\\htdocs\\MesadeAyuda\\vista\\fotos\\5.png','C:\\xampp\\htdocs\\MesadeAyuda\\vi
+sta\\hvs\\5.pdf','415','linap@mail.com','Cl. 47A ##85 - 20, Medellín, Antioquia',-75.6026462,6.2504554,null,30);
+INSERT INTO `empleado`(`IDEMPLEADO`, `NOMBRE`, `FOTO`, `HOJAVIDA`, `TELEFONO`, `EMAIL`, `DIRECCION`, `X`, `Y`, 
+`fkEMPLE_JEFE`, `fkAREA`) VALUES 
+('6','Sebastian Henao','C:\\xampp\\htdocs\\MesadeAyuda\\vista\\fotos\\6.png','C:\\xampp\\htdocs\\MesadeAyuda\\vi
+sta\\hvs\\6.pdf','416','sebastianh@mail.com','Cra. 24 #42-2, Medellín, Antioquia',-75.5642511,6.2785609,null,60);
+INSERT INTO `empleado`(`IDEMPLEADO`, `NOMBRE`, `FOTO`, `HOJAVIDA`, `TELEFONO`, `EMAIL`, `DIRECCION`, `X`, `Y`, 
+`fkEMPLE_JEFE`, `fkAREA`) VALUES 
+('7','Mariana Gonzalez','C:\\xampp\\htdocs\\MesadeAyuda\\vista\\fotos\\7.png','C:\\xampp\\htdocs\\MesadeAyuda\\vi
+sta\\hvs\\7.pdf','417','marianag@mail.com','Cl. 17A #35 - 58, Medellín, Antioquia',-75.245862,6.2504122,null,70);

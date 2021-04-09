@@ -16,54 +16,54 @@
     
         function guardar()
         {
-            $cod=$this->objCargos->getIdCargo();
+            $idc=$this->objCargos->getIdCargo();
             $nom=$this->objCargos->getNombre();
            
-
             $objControlConexion = new ControlConexion();
-            $objControlConexion->abrirBd("localhost","root","","bdmesa_ayuda");
+            $objControlConexion->abrirBd("localhost","root","","mesa_ayuda");
 
-            $comandoSql = "insert into cargo values('"cod."','"nom."')";
-
-            //$comandoSql = "insert into clientes values('".$cod."','".$nom."','".$tel."','".$ema."',".$cre.")";
+            $comandoSql = "insert into cargo values(".$idc.",'".$nom."')";
 
             $objControlConexion->ejecutarComandoSql($comandoSql);
 
             $objControlConexion->cerrarBd();
-    
         }
 
         function Consultar()
         {
-            $cod=$this->objCargos->getIdCargo();
+            $idc=$this->objCargos->getIdCargo();
             $objControlConexion = new ControlConexion();
-            $objControlConexion->abrirBd("localhost","root","","bdmesa_ayuda");
+            $objControlConexion->abrirBd("localhost","root","","mesa_ayuda");
 
-            $comandoSql = "select * from cargo where codigo = '".$cod."'";
+            $comandoSql = "select * from cargo where idcargo = '".$idc."'";
 
             $rs = $objControlConexion->ejecutarSelect($comandoSql);
             $registro = $rs->fetch_array(MYSQLI_BOTH); //Asigna los datos a la variable registro.
             
-            $nom = $registro ["NOMBRE"];
-                       
+            if($registro != ""){
+                $idc = $registro ["IDCARGO"];
+                $nom = $registro ["NOMBRE"];
+               
+                $this->objCargos->setIdCargo($idc);
+                $this->objCargos->setNombre($nom);
 
-            $this->objCargos->setNombre($nom);
-                       
-
+            }else{
+                $this->objCargos->setIdCargo("");
+            }
             $objControlConexion->cerrarBd();
             return $this->objCargos;
         }
 
         function Modificar()
         {
-            $cod=$this->objCargos->getIdCargo();
+            $idc=$this->objCargos->getIdCargo();
             $nom=$this->objCargos->getNombre();
                         
 
             $objControlConexion = new ControlConexion();
-            $objControlConexion->abrirBd("localhost","root","","bdmesa_ayuda");
+            $objControlConexion->abrirBd("localhost","root","","mesa_ayuda");
 
-            $comandoSql = "update cargo set nombre = '".$nom."' where codigo = '".$cod."'";
+            $comandoSql = "update cargo set nombre = '".$nom."' where idcargo = '".$idc."'";
 
             
             $objControlConexion->ejecutarComandoSql($comandoSql);
@@ -74,12 +74,12 @@
 
         function Borrar()
         {
-            $cod=$this->objCargos->getIdCargo();
+            $idc=$this->objCargos->getIdCargo();
             
             $objControlConexion = new ControlConexion();
-            $objControlConexion->abrirBd("localhost","root","","bdmesa_ayuda");
+            $objControlConexion->abrirBd("localhost","root","","mesa_ayuda");
 
-            $comandoSql = "delete from cargo where codigo= '".$cod."' ";
+            $comandoSql = "delete from cargo where idcargo= '".$idc."' ";
 
             
             $objControlConexion->ejecutarComandoSql($comandoSql);
